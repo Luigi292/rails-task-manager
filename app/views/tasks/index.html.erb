@@ -1,1 +1,6 @@
-<h1>Hello World</h1>
+<h1>Tasks</h1>
+<ul>
+  <% @tasks.each do |task| %>
+   <li><%= task.title %> - <%= task.details %></li>
+  <% end %>
+</ul>
