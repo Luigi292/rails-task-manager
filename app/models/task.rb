@@ -1,2 +1,5 @@
 class Task < ApplicationRecord
-end
+    attribute :title, :string
+    attribute :details, :text
+    attribute :completed, :boolean, default: false
+  end
